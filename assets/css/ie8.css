@@ -1,52 +1,57 @@
 /*
-	Prologue by HTML5 UP
+	Escape Velocity by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Section/Article */
-
-	section > .last-child, section.last-child, article > .last-child, article.last-child {
-		margin-bottom: 0;
-	}
-
-/* Form */
+/* Basic */
 
 	form input[type="text"],
 	form input[type="email"],
 	form input[type="password"],
 	form select,
 	form textarea {
+		position: relative;
 		-ms-behavior: url("assets/js/ie/PIE.htc");
 	}
-
-/* Button */
 
 	input[type="button"],
 	input[type="submit"],
-	input[type="reset"],
-	button,
-	.button {
+	input[type="reset"] {
+		position: relative;
 		-ms-behavior: url("assets/js/ie/PIE.htc");
 	}
 
-/* Header */
-
-	#nav ul li a {
-		color: #888;
+	.button,
+	#intro > .style2,
+	#copyright ul,
+	#nav > ul,
+	.dropotron {
+		position: relative;
+		-ms-behavior: url("assets/js/ie/PIE.htc");
 	}
 
-		#nav ul li a.active {
-			background: #1C2022;
-		}
+/* Section/Article */
 
-	#headerToggle .toggle {
-		background-color: #888;
+	section > .last-child,
+	article > .last-child,
+	section.last-child,
+	article.last-child {
+		margin-bottom: 0;
 	}
 
-/* Main */
+/* Wrappers */
 
-	#main > section.cover {
-		background-position: auto;
+	.wrapper .title:before, .wrapper .title:after {
+		display: none;
+	}
+
+	#header-wrapper {
 		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
+	}
+
+/* Copyright */
+
+	#copyright {
+		margin: 0;
 	}
